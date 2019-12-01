@@ -30,6 +30,7 @@ app.get('/cotacao', (req, res) => {
             conversao: convert.toMoney(conversao)
         }) 
     } else {
+        console.log(err)
         res.render('cotacao', {
             error: 'Valores inválidos'
         })

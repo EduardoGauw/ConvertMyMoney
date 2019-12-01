@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-const url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?%40dataCotacao=%2711-26-2019%27&%24format=json&fbclid=IwAR3aSzsGlWFsFPKVV5rEcwLTraJTwDCaZdF-ypABIolK_88ZNKHnEdmj1fk'
+const url = `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='11-29-2019'&$top=100&$format=json&$select=cotacaoVenda`
 
 axios
     .get(url)
